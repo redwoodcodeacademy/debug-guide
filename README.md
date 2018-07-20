@@ -1,12 +1,21 @@
-# Table of Content
-* [Open a Ticket](#open-a-ticket)
-* [Shortcut](#shortcut) (Go here for quick help)
-* [Thoughts on Learning](#thoughts-on-learning)
-* [Big Note for Beginners](#big-note-for-beginners)
-* [Process](#process) (Go here if quick help was not enough to solve your bug)
-* [Examples](#examples) (Section will be continually updated with bugs from students)
+# Debug Guide
 
-# Open a Ticket
+- [Debug Guide](#debug-guide)
+    - [Open a Ticket](#open-a-ticket)
+    - [Shortcut](#shortcut)
+        - [Think about these things anytime you see an error](#think-about-these-things-anytime-you-see-an-error)
+    - [Thoughts on Learning](#thoughts-on-learning)
+        - [Ask for help, we do not get tired of questions, even if we end up telling you to search most of your question online](#ask-for-help-we-do-not-get-tired-of-questions-even-if-we-end-up-telling-you-to-search-most-of-your-question-online)
+    - [Big Note for Beginners](#big-note-for-beginners)
+    - [Process](#process)
+        - [This section will be continually updated](#this-section-will-be-continually-updated)
+    - [Examples](#examples)
+        - [Example 1: `undefined` variable](#example-1-undefined-variable)
+        - [Example 2: Not passing in correct amount of parameters](#example-2-not-passing-in-correct-amount-of-parameters)
+        - [Example 3: Treating my variables as the wrong data type](#example-3-treating-my-variables-as-the-wrong-data-type)
+
+## Open a Ticket
+
 Ask yourself these questions, and prepare an answer for each of them before asking for help.
 
 * What is your code doing? 
@@ -14,8 +23,12 @@ Ask yourself these questions, and prepare an answer for each of them before aski
 * How do you know it doesn’t work? (Does it show an error message, or is it not working the way you want it to?)
 * What have you tried to fix it, and why?
 
-# Shortcut 
-## Think about these things anytime you see an error
+
+
+## Shortcut 
+
+### Think about these things anytime you see an error
+
 * Use `console.log` to triangulate where your code breaks
 * Are you dealing with a ***syntax error***? Does the code say `TypeError` or `undefined does not have a property length`?
     * Check for spelling of your variables
@@ -27,9 +40,10 @@ Ask yourself these questions, and prepare an answer for each of them before aski
 * Comment out code and bring your code back to a working status, then slowly add back your code you commented till it breaks (triangulating errors)
 
 
-# Thoughts on Learning
 
-## Ask for help, we do not get tired of questions, even if we end up telling you to search most of your question online
+## Thoughts on Learning
+
+### Ask for help, we do not get tired of questions, even if we end up telling you to search most of your question online
 * We will show you the answer often, especially in the beginning and especially with syntax questions
 * However, expect that if we point you to a tool (i.e. a built-in function you should check out), you will have to do some ***research yourself*** on Google
 * If you still do not understand how to solve the problem, we will help further
@@ -40,25 +54,28 @@ especially in the beginning.
 We ask for everyone to research their questions first not because we do not want to help, but because it will make you good at solving the basic problems of programming:
 
 * ***Syntax***. Spelling and using the right format for your code.
-*  ***Configuration problems***. Example: setting up a React project (usually people have solutions out there for you already).
+* ***Configuration problems***. Example: setting up a React project (usually people have solutions out there for you already).
 
 What we will most want to help on, and what you will most want our help on, are ***logic problems***. These do not
 always give an error, and that is why these are the most challenging for all programmers.
 
 
-# Big Note for Beginners
+
+## Big Note for Beginners
+
 Have a belief about all of your variables. You should know (write it down if you're unsure) what your variables are most of the time.
 Data type is essential, you should never guess what data type your variables are and continue coding a long time without confirming what they are. 
 
 You can confirm the data type by using `console.log` or using a function with the variable without erroring.
 
 
-# Process 
 
-| More Thorough Debugging Tips       | 
-| :------------- |
-| Write out your beliefs about your code (what you think your variables look like) | 
-| Triangulate your bug, test each belief and assumption you have about your code   | 
+## Process 
+
+| More Thorough Debugging Tips                                 |
+| :----------------------------------------------------------- |
+| Write out your beliefs about your code (what you think your variables look like) |
+| Triangulate your bug, test each belief and assumption you have about your code |
 | If you coded a lot without testing your code, and now you are lost at where to even start looking for your bug, start by removing code one line/block at a time until you get back to a working code block, then start adding in code one line/group at a time. When you reach your error again, you will have found the suspect. |
 | You may also want to clean up your code by refactoring it into smaller functions and then testing the smaller functions. |
 | Reproduce your error after you fixed it, did it come back again? This teaches you a lot about the nature of your bug, and general programming ideas you might have had that were wrong. |
@@ -71,7 +88,9 @@ You can confirm the data type by using `console.log` or using a function with th
 
 ---
 ### This section will be continually updated
-# Examples
+
+
+## Examples
 
 
 ### Example 1: `undefined` variable
@@ -94,7 +113,10 @@ If the student still does not understand the error, I will ask:
 * Perhaps you meant to reference a `person` variable somewhere else?
 
 ---
+
+
 ### Example 2: Not passing in correct amount of parameters
+
 ```javascript
 function removeItemFromArray(arr, index) {
     var copy = [...arr];    // making a copy of 'arr'
@@ -114,7 +136,10 @@ What's wrong with this code?
 * This would still be a ***syntax*** error, because the author forgot to type in something. 
 
 ---
+
+
 ### Example 3: Treating my variables as the wrong data type
+
 ```javascript
 var obj = [{ 
     name: 'patrick',
@@ -130,4 +155,4 @@ What's wrong with this code?
 * `obj` is actually an array of length 1, with an object inside that has the attribute `name`. 
 
 Solution
-* Either remove the array notation and make `obj` just the object with `{ name, age }`, or access it via `obj[0].name`.
+* Either remove the array notation and make `obj` just the object with `{ name, age }
