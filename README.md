@@ -1,18 +1,21 @@
-# Debug Guide
+    ****# Debug Guide
 
-- [Debug Guide](#debug-guide)
-    - [Open a Ticket](#open-a-ticket)
-    - [Shortcut](#shortcut)
-        - [Think about these things anytime you see an error](#think-about-these-things-anytime-you-see-an-error)
-    - [Thoughts on Learning](#thoughts-on-learning)
-        - [Ask for help, we do not get tired of questions, even if we end up telling you to search most of your question online](#ask-for-help-we-do-not-get-tired-of-questions-even-if-we-end-up-telling-you-to-search-most-of-your-question-online)
-    - [Big Note for Beginners](#big-note-for-beginners)
-    - [Process](#process)
-        - [This section will be continually updated](#this-section-will-be-continually-updated)
-    - [Examples](#examples)
-        - [Example 1: `undefined` variable](#example-1-undefined-variable)
-        - [Example 2: Not passing in correct amount of parameters](#example-2-not-passing-in-correct-amount-of-parameters)
-        - [Example 3: Treating my variables as the wrong data type](#example-3-treating-my-variables-as-the-wrong-data-type)
+<<<<<<< HEAD
+- [Open a Ticket](#open-a-ticket)
+- [Shortcut](#shortcut)
+    - [Think about these things anytime you see an error](#think-about-these-things-anytime-you-see-an-error)
+- [Thoughts on Learning](#thoughts-on-learning)
+    - [Ask for help, we do not get tired of questions, even if we end up telling you to search most of your question online](#ask-for-help-we-do-not-get-tired-of-questions-even-if-we-end-up-telling-you-to-search-most-of-your-question-online)
+- [Big Note for Beginners](#big-note-for-beginners)
+- [Process](#process)
+    - [This section will be continually updated](#this-section-will-be-continually-updated)
+- [Examples](#examples)
+    - [Example 1: `undefined` variable](#example-1-undefined-variable)
+    - [Example 2: Not passing in correct amount of parameters](#example-2-not-passing-in-correct-amount-of-parameters)
+    - [Example 3: Treating my variables as the wrong data type](#example-3-treating-my-variables-as-the-wrong-data-type)
+=======
+[TOC]
+>>>>>>> 1a8eb15969e1d54c8aa3d8bdaa62ab555c3ab1ad
 
 ## Open a Ticket
 
@@ -155,4 +158,8 @@ What's wrong with this code?
 * `obj` is actually an array of length 1, with an object inside that has the attribute `name`. 
 
 Solution
+<<<<<<< HEAD
 * Either remove the array notation and make `obj` just the object with `{ name, age }
+=======
+* Either remove the array notation and make `obj` just the object with `{ name, age }
+>>>>>>> 1a8eb15969e1d54c8aa3d8bdaa62ab555c3ab1ad
