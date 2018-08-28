@@ -1,5 +1,3 @@
-# Debug Guide
-
 - [Debug Guide](#debug-guide)
     - [Open a Ticket](#open-a-ticket)
     - [Shortcut](#shortcut)
